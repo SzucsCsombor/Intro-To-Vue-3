@@ -51,7 +51,8 @@ app.component('product-display', {
         <button 
           class="button" 
           :class="{ disabledButton: !inStock }" 
-          :disabled="!inStock">
+          :disabled="!inStock"
+          @click="removeAll">
           Remove All
         </button>
       <!-- solution -->
@@ -75,13 +76,16 @@ app.component('product-display', {
       addToCart() {
           this.$emit('add-to-cart', this.variants[this.selectedVariant].id)
       },
-      // solution
       removeFromCart() {
         this.$emit('remove-from-cart', this.variants[this.selectedVariant].id)
       },
-      // solution
+      
       updateVariant(index) {
-          this.selectedVariant = index
+        this.selectedVariant = index
+      },
+      // solution
+      removeAll() {
+        this.$emit('remove-all')
       }
   },
   computed: {

@@ -14,10 +14,12 @@ const app = Vue.createApp({
             if (index > -1) {
                 this.cart.splice(index, 1)
             }
-        }
+        },
         
         // solution
-
+        removeAllFromCart() {
+            this.cart.splice(0);
+        }
         // solution
     }
 })
