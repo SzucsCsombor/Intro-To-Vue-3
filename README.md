@@ -7,6 +7,6 @@ Csapat: Szücs Ábel Csombor, Varga Márton
     - $add-to-cart
     - :add-to-cart
 
-#A .html fájlban hogyan tudod meghatározni a scriptben lévő 'cart' tömb hosszát? (Helyes válasz: "{{ cvart.length }}")
+#A .html fájlban hogyan tudod meghatározni a scriptben lévő 'cart' tömb hosszát? (Helyes válasz: "{{ cart.length }}")
 
-#A feladat: Készíts egy eventet ami az összes Cart-ban lévő elemet kitörli az "Összes törlése" gombra kattintva.
+#A feladat: Készíts egy eventet ami az összes Cart-ban lévő elemet kitörli az "Remove All" gombra kattintva.
