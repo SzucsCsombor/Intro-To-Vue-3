@@ -39,14 +39,21 @@ app.component('product-display', {
           Add to Cart
         </button>
 
-        <!-- solution -->
-        <button 
+      <button 
         class="button" 
         :class="{ disabledButton: !inStock }" 
         :disabled="!inStock" 
         @click="removeFromCart">
         Remove Item
       </button>
+      
+      <!-- solution -->
+        <button 
+          class="button" 
+          :class="{ disabledButton: !inStock }" 
+          :disabled="!inStock">
+          Remove All
+        </button>
       <!-- solution -->
 
       </div>
